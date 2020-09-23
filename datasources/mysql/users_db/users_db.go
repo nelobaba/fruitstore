@@ -26,7 +26,6 @@ var (
 )
 // called the first time you import the users_db package
 func init() {
-	//"root:Engronyi2019.@tcp(localhost)/users_db?charset=utf8"
 	dataSourceName := fmt.Sprintf("%s:%s@tcp(%s)/%s?charset=utf8",
 		username, password, host, schema,
 	)
